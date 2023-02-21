@@ -1,0 +1,74 @@
+.app {
+  .app-content {
+    padding: 20px 0;
+
+    h2 {
+      font-family: 'Poppins';
+    }
+
+    .loading {
+      display: flex;
+      justify-content: center;
+      padding: 10%;
+    }
+
+    .app-search {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 -40px;
+      .search-container {
+        padding: 20px 0 20px 20px;
+
+        .search {
+          margin-right: 4px;
+          border: 1px solid grey;
+          border-radius: 4px;
+          padding: 7px;
+        }
+      }
+    }
+
+    .movies {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 200px;
+      transition: 0.3s;
+      border-radius: 4px;
+      margin: 15px;
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .poster-title {
+        background: rgb(38,210,187);
+        background: linear-gradient(90deg, rgba(38,210,187,1) 0%, rgba(32,180,205,1) 46%, rgba(176,44,205,1) 100%);
+        border: none;
+        border-radius: 0 0 5px 5px;
+        padding: 10px 10px 5px;
+        p {
+          font-family: 'Poppins';
+          height: 72px;
+          text-align: center;
+          margin: 0;
+          color: white;
+        }
+      }
+    }
+  }
+}
